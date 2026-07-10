@@ -8,22 +8,6 @@ WanderLust is a full-stack web application inspired by Airbnb that allows users 
 
 > **Coming Soon**
 
----
-
-## 📸 Screenshots
-
-> Add screenshots of your application here.
-
-Example:
-
-- Home Page
-- Listing Details
-- Add New Listing
-- Login & Signup
-- User Profile
-
----
-
 ## ✨ Features
 
 - 🔐 User Authentication (Signup, Login & Logout)
