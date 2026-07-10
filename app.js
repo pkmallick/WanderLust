@@ -30,10 +30,20 @@ const dbUrl = process.env.ATLASDB_URL;
 
 // DATABASE
 
+// async function main() {
+// await mongoose.connect(dbUrl);
+// }main().then(()=>{console.log("Connected to DB");
+// }).catch(console.log);
+// DATABASE
+
 async function main() {
-await mongoose.connect(dbUrl);
-}main().then(()=>{console.log("Connected to DB");
-}).catch(console.log);
+    await mongoose.connect(dbUrl);
+    console.log("Connected to DB");
+}
+
+main().catch((err) => {
+    console.log(err);
+});
 
 // VIEW
 
@@ -107,7 +117,12 @@ app.use(
 );
 
 // SERVER
-app.listen(8080,()=>{
-    console.log("Server listening on 8080");}
-);
+// app.listen(8080,()=>{
+//     console.log("Server listening on 8080");}
+// );
+const PORT = process.env.PORT || 8080;
+
+app.listen(PORT, () => {
+    console.log(`Server listening on port ${PORT}`);
+});
 
